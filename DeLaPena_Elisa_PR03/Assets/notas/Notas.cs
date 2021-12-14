@@ -10,9 +10,26 @@ public class Notas : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
+    /* NOTAS
+     
+     
+     movimiento con flechas. 
+
+    correr con shift
+
+    crouch ctrl o flecha abajo
+
+    roll alt
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     */
 }
