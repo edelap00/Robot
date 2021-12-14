@@ -1,0 +1,474 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.1f1 (77a89f25062f) revision 7841951'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro Education; OS build 19042.1348; Version 2009; 64bit' Language: 'es' Physical Memory: 16296 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/ani/Desktop/edelap00/Robot/DeLaPena_Elisa_PR03
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+61502
+Successfully changed project path to: C:/Users/ani/Desktop/edelap00/Robot/DeLaPena_Elisa_PR03
+C:/Users/ani/Desktop/edelap00/Robot/DeLaPena_Elisa_PR03
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 20.46 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.1f1 (77a89f25062f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ani/Desktop/edelap00/Robot/DeLaPena_Elisa_PR03/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
+    Vendor:   
+    VRAM:     5991 MB
+    Driver:   27.21.14.5730
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56796
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001474 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 19.63 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.443 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000489 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.686 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1113 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 56.9 MB.
+System memory in use after: 56.9 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1555.
+Total: 5.286300 ms (FindLiveObjects: 0.389000 ms CreateObjectMapping: 0.124100 ms MarkObjects: 4.551700 ms  DeleteObjects: 0.218200 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6374019befeac6ce670f13ba9960efb') in 0.018858 seconds
+  Import took 0.023093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.037563 seconds.
+  path: Assets/Art
+  artifactKey: Guid(e3c455a930decbc4e9939ebcdefc057d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art using Guid(e3c455a930decbc4e9939ebcdefc057d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ba36fb79deaf162d9eac7bc85c407d5') in 0.006229 seconds
+  Import took 0.007871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.997337 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(26a4733f09f8354489e957985d1a7268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(26a4733f09f8354489e957985d1a7268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '041d36a1702c232a40ea564039d9cc4c') in 0.006427 seconds
+  Import took 0.008386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000599 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(26a4733f09f8354489e957985d1a7268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(26a4733f09f8354489e957985d1a7268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '041d36a1702c232a40ea564039d9cc4c') in 0.001921 seconds
+  Import took 0.003598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.926504 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(2732b819fd542644f9d9aef146b7810f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(2732b819fd542644f9d9aef146b7810f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f427b448225578cde9da113d9044818d') in 0.006007 seconds
+  Import took 0.007694 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.761268 seconds.
+  path: Assets/Art/12535-tecnologia.jpg
+  artifactKey: Guid(9b2fc0a377d1a4a498f68873d1b8ae8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/12535-tecnologia.jpg using Guid(9b2fc0a377d1a4a498f68873d1b8ae8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45748d115d0c96a89670a65a0518d7fc') in 0.049597 seconds
+  Import took 0.051324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.086555 seconds.
+  path: Assets/Art/drive-download-20211214T084618Z-001.zip
+  artifactKey: Guid(077ba8adfa059004fbc03f2c4d56619e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/drive-download-20211214T084618Z-001.zip using Guid(077ba8adfa059004fbc03f2c4d56619e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e84e4040506d0638a7607d68288aea4') in 0.009694 seconds
+  Import took 0.011396 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 55.074056 seconds.
+  path: Assets/Art/RobotBoyDeathSprite.png
+  artifactKey: Guid(d6476a2ee7ca0cd44bbe0bb62d5024e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/RobotBoyDeathSprite.png using Guid(d6476a2ee7ca0cd44bbe0bb62d5024e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a9a9540a66f183aab28d5d86dcc5200') in 0.022038 seconds
+  Import took 0.024074 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/Art/RobotBoyRollSprite.png
+  artifactKey: Guid(f23b8d5d937d24942af6a0d9675f65e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/RobotBoyRollSprite.png using Guid(f23b8d5d937d24942af6a0d9675f65e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5746f00434c86650adf9eccea15aab7') in 0.011860 seconds
+  Import took 0.013520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Art/RobotBoyWalkSprite.png
+  artifactKey: Guid(0294beac12392c048bd05462d09f0457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/RobotBoyWalkSprite.png using Guid(0294beac12392c048bd05462d09f0457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a1338a86fe5db2859a27939cada225c') in 0.013439 seconds
+  Import took 0.015149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/Art/RobotBoyIdleSprite.png
+  artifactKey: Guid(6cad45a4e3381734696ab44f89547b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/RobotBoyIdleSprite.png using Guid(6cad45a4e3381734696ab44f89547b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5146eda58d0cbd4fb2d5320cd0ca89c9') in 0.014504 seconds
+  Import took 0.016080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Art/RobotBoyJumpSprite.png
+  artifactKey: Guid(bf26db938710e2f46b1fc76a1b4120c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/RobotBoyJumpSprite.png using Guid(bf26db938710e2f46b1fc76a1b4120c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb56b9fe13e33a76a9767744dad2daa') in 0.014788 seconds
+  Import took 0.016302 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Art/RobotBoyRunSprite.png
+  artifactKey: Guid(aa7983ae6f266db4fb61fcb69a8e0eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/RobotBoyRunSprite.png using Guid(aa7983ae6f266db4fb61fcb69a8e0eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f0471f5cfd15d27e3e80712d12dd816') in 0.011414 seconds
+  Import took 0.012894 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.116233 seconds.
+  path: Assets/Art/RobotBoyCrouchSprite.png
+  artifactKey: Guid(84b0393a14327b047b8c9ddd426038fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/RobotBoyCrouchSprite.png using Guid(84b0393a14327b047b8c9ddd426038fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '115c921b9aaba396326a5645a613e369') in 0.011457 seconds
+  Import took 0.013123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.395544 seconds.
+  path: Assets/Art/SpritesRobot
+  artifactKey: Guid(582c0b16be4d25d4cb77fda011da8bff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesRobot using Guid(582c0b16be4d25d4cb77fda011da8bff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '984743f5f8f62734336d438aa91fd7d5') in 0.006275 seconds
+  Import took 0.008121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 55.702375 seconds.
+  path: Assets/Art/SpritesTorreta
+  artifactKey: Guid(e91781441298faf4c8a6b37b4f1b008b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesTorreta using Guid(e91781441298faf4c8a6b37b4f1b008b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b774c2cfb19084355739217fe25e951') in 0.005462 seconds
+  Import took 0.007152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.490456 seconds.
+  path: Assets/Art/SpritesTorreta/turret_01_mk1 1.png
+  artifactKey: Guid(e36265f22e16ed746a8fec79aabc3425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesTorreta/turret_01_mk1 1.png using Guid(e36265f22e16ed746a8fec79aabc3425) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7c3545e25122c06da668e2e87cb10fa') in 0.008959 seconds
+  Import took 0.010638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Art/SpritesTorreta/turret_01_mk2.png
+  artifactKey: Guid(676e7c7814ac35a40984cc4d8e14ab34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesTorreta/turret_01_mk2.png using Guid(676e7c7814ac35a40984cc4d8e14ab34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7adc1405099962b27268c1f4ebfd1a9e') in 0.007777 seconds
+  Import took 0.009306 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Art/SpritesTorreta/turret_01_mk4.png
+  artifactKey: Guid(274677c90c327484cbee0673fccc8928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesTorreta/turret_01_mk4.png using Guid(274677c90c327484cbee0673fccc8928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7eecfccb4584b386047b61573a1c660') in 0.009659 seconds
+  Import took 0.011309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Art/SpritesTorreta/turret_02_mk3.png
+  artifactKey: Guid(a7a435a1b20f1a7458b18069a093ded7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesTorreta/turret_02_mk3.png using Guid(a7a435a1b20f1a7458b18069a093ded7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '625d0882a5a28d33a68668d9dd94de99') in 0.008693 seconds
+  Import took 0.010241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Art/SpritesTorreta/turret_02_mk2.png
+  artifactKey: Guid(6dff38325e6e798478954118e5bd893b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesTorreta/turret_02_mk2.png using Guid(6dff38325e6e798478954118e5bd893b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5cc83383a7545eda73cc9951d43496b') in 0.008316 seconds
+  Import took 0.009888 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.326316 seconds.
+  path: Assets/Art/BackgroundNavyGridSprite.png
+  artifactKey: Guid(ec94d8c989fbb4d4385a32782df6d757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/BackgroundNavyGridSprite.png using Guid(ec94d8c989fbb4d4385a32782df6d757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd38ad9b66cd6febb37e807d712bcf7cf') in 0.010703 seconds
+  Import took 0.012506 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.884828 seconds.
+  path: Assets/Art/BackgroundNavyGridSprite.png
+  artifactKey: Guid(ec94d8c989fbb4d4385a32782df6d757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/BackgroundNavyGridSprite.png using Guid(ec94d8c989fbb4d4385a32782df6d757) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '317bd31d764ff1a60bff37993d4835d0') in 0.038513 seconds
+  Import took 0.040226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.502856 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a0c7bd3eade52b464e03a3fa19ccb01') in 0.007184 seconds
+  Import took 0.009305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000803 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a0c7bd3eade52b464e03a3fa19ccb01') in 0.002409 seconds
+  Import took 0.004109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.992146 seconds.
+  path: Assets/Scenes/Game.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0797be3765af5fa009f9bb85b74c5685') in 0.005816 seconds
+  Import took 0.007536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002573 seconds.
+  path: Assets/Scenes/Game.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0797be3765af5fa009f9bb85b74c5685') in 0.002237 seconds
+  Import took 0.003933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 109.528603 seconds.
+  path: Assets/Art/SpritesRobot/RobotBoyCrouchSprite.png
+  artifactKey: Guid(84b0393a14327b047b8c9ddd426038fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesRobot/RobotBoyCrouchSprite.png using Guid(84b0393a14327b047b8c9ddd426038fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82670eaa3d3cb9765d14fbf97b585061') in 0.018145 seconds
+  Import took 0.019863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.097652 seconds.
+  path: Assets/Art/SpritesRobot/RobotBoyDeathSprite.png
+  artifactKey: Guid(d6476a2ee7ca0cd44bbe0bb62d5024e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesRobot/RobotBoyDeathSprite.png using Guid(d6476a2ee7ca0cd44bbe0bb62d5024e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0b1be3caa5fb47a6606a4a9b6b9f2e0') in 0.017978 seconds
+  Import took 0.019815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Art/SpritesRobot/RobotBoyRollSprite.png
+  artifactKey: Guid(f23b8d5d937d24942af6a0d9675f65e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesRobot/RobotBoyRollSprite.png using Guid(f23b8d5d937d24942af6a0d9675f65e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f11b74a3001492ee0922b50ca3e89f5') in 0.016701 seconds
+  Import took 0.018270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Art/SpritesRobot/RobotBoyWalkSprite.png
+  artifactKey: Guid(0294beac12392c048bd05462d09f0457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesRobot/RobotBoyWalkSprite.png using Guid(0294beac12392c048bd05462d09f0457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dec997b8c642f25e8d25758514e7448') in 0.011315 seconds
+  Import took 0.012868 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Art/SpritesRobot/RobotBoyIdleSprite.png
+  artifactKey: Guid(6cad45a4e3381734696ab44f89547b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesRobot/RobotBoyIdleSprite.png using Guid(6cad45a4e3381734696ab44f89547b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63b347646d1d9b85bdbb8c349e916ed7') in 0.013464 seconds
+  Import took 0.015032 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/Art/SpritesRobot/RobotBoyJumpSprite.png
+  artifactKey: Guid(bf26db938710e2f46b1fc76a1b4120c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesRobot/RobotBoyJumpSprite.png using Guid(bf26db938710e2f46b1fc76a1b4120c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b26bb119579c695f9e7563d712e3e215') in 0.012592 seconds
+  Import took 0.014193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Art/SpritesRobot/RobotBoyRunSprite.png
+  artifactKey: Guid(aa7983ae6f266db4fb61fcb69a8e0eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesRobot/RobotBoyRunSprite.png using Guid(aa7983ae6f266db4fb61fcb69a8e0eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fefb4d8b217d952cbef69682650c86b') in 0.011621 seconds
+  Import took 0.013184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.148046 seconds.
+  path: Assets/Art/SpritesRobot/RobotBoyRollSprite.png
+  artifactKey: Guid(f23b8d5d937d24942af6a0d9675f65e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesRobot/RobotBoyRollSprite.png using Guid(f23b8d5d937d24942af6a0d9675f65e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b9064b2acd4dd9b182fc47094946149') in 0.012272 seconds
+  Import took 0.014402 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007872 seconds.
+  path: Assets/Art/SpritesRobot/RobotBoyCrouchSprite.png
+  artifactKey: Guid(84b0393a14327b047b8c9ddd426038fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesRobot/RobotBoyCrouchSprite.png using Guid(84b0393a14327b047b8c9ddd426038fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8dd7d89843ea20d1dab7e5f091879f91') in 0.010464 seconds
+  Import took 0.012238 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000145 seconds.
+  path: Assets/Art/SpritesRobot/RobotBoyWalkSprite.png
+  artifactKey: Guid(0294beac12392c048bd05462d09f0457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesRobot/RobotBoyWalkSprite.png using Guid(0294beac12392c048bd05462d09f0457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8a256e050cd9c3189e9b2373d5fbcef') in 0.011972 seconds
+  Import took 0.013722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/Art/SpritesRobot/RobotBoyIdleSprite.png
+  artifactKey: Guid(6cad45a4e3381734696ab44f89547b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesRobot/RobotBoyIdleSprite.png using Guid(6cad45a4e3381734696ab44f89547b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0816c28893f30a266fe0385891c4829') in 0.014899 seconds
+  Import took 0.016572 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Art/SpritesRobot/RobotBoyJumpSprite.png
+  artifactKey: Guid(bf26db938710e2f46b1fc76a1b4120c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesRobot/RobotBoyJumpSprite.png using Guid(bf26db938710e2f46b1fc76a1b4120c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db4caf2ca8fc645505ea690996a3d877') in 0.016178 seconds
+  Import took 0.018515 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/Art/SpritesRobot/RobotBoyRunSprite.png
+  artifactKey: Guid(aa7983ae6f266db4fb61fcb69a8e0eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesRobot/RobotBoyRunSprite.png using Guid(aa7983ae6f266db4fb61fcb69a8e0eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad7c734549ecf7ae5f09bda69ea3036d') in 0.014571 seconds
+  Import took 0.016495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Art/SpritesRobot/RobotBoyDeathSprite.png
+  artifactKey: Guid(d6476a2ee7ca0cd44bbe0bb62d5024e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesRobot/RobotBoyDeathSprite.png using Guid(d6476a2ee7ca0cd44bbe0bb62d5024e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1bf8dfeb31aae6322501261fd9b9f66') in 0.015149 seconds
+  Import took 0.016928 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000483 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.685 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.18 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1142 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.0 MB.
+System memory in use after: 61.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1600.
+Total: 1.684600 ms (FindLiveObjects: 0.129100 ms CreateObjectMapping: 0.031800 ms MarkObjects: 1.455600 ms  DeleteObjects: 0.066600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 124.349122 seconds.
+  path: Assets/Art/SpritesRobot/RobotBoyCrouchSprite.png
+  artifactKey: Guid(84b0393a14327b047b8c9ddd426038fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesRobot/RobotBoyCrouchSprite.png using Guid(84b0393a14327b047b8c9ddd426038fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7991c4c6c89c5850315c0e19138e5cc') in 0.103674 seconds
+  Import took 0.105604 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004516 seconds.
+  path: Assets/Art/SpritesRobot/RobotBoyCrouchSprite.png
+  artifactKey: Guid(84b0393a14327b047b8c9ddd426038fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesRobot/RobotBoyCrouchSprite.png using Guid(84b0393a14327b047b8c9ddd426038fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7991c4c6c89c5850315c0e19138e5cc') in 0.076215 seconds
+  Import took 0.078008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.246141 seconds.
+  path: Assets/Art/SpritesRobot/RobotBoyDeathSprite.png
+  artifactKey: Guid(d6476a2ee7ca0cd44bbe0bb62d5024e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesRobot/RobotBoyDeathSprite.png using Guid(d6476a2ee7ca0cd44bbe0bb62d5024e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '904163deb6da86e9332548c7f007e946') in 0.099024 seconds
+  Import took 0.100929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.532018 seconds.
+  path: Assets/Art/SpritesRobot/RobotBoyIdleSprite.png
+  artifactKey: Guid(6cad45a4e3381734696ab44f89547b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesRobot/RobotBoyIdleSprite.png using Guid(6cad45a4e3381734696ab44f89547b68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e8b44b39967bb55e6f5b89288826eba') in 0.107518 seconds
+  Import took 0.109351 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.480496 seconds.
+  path: Assets/Art/SpritesRobot/RobotBoyJumpSprite.png
+  artifactKey: Guid(bf26db938710e2f46b1fc76a1b4120c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/SpritesRobot/RobotBoyJumpSprite.png using Guid(bf26db938710e2f46b1fc76a1b4120c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcd2a1be23ab35a9fcf2abd47a5dc549') in 0.096235 seconds
+  Import took 0.098109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 123.568913 seconds.
+  path: Assets/New Material.mat
+  artifactKey: Guid(95274a2b187744c42a2b3ad93ef3fea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Material.mat using Guid(95274a2b187744c42a2b3ad93ef3fea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0f8e8f704aa63c98eb525a2bec65483') in 0.037600 seconds
+  Import took 0.039640 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
