@@ -10,7 +10,7 @@ public class PlayerManager : MonoBehaviour
     //variables 
 
     bool isGrounded;
-    int impulsoV = 6;
+    int impulsoV = 8;
     float desplH;
     float maxSpeed = 4f;
     float speed;
@@ -26,25 +26,36 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
-        ani.SetFloat("SpeedX", speed);
+        desplH = Input.GetAxis("Horizontal");
+
         Saltar();
 
-        float desplX = Input.GetAxis("Horizontal");
-        //Si nos movemos a la derecha y estamos mirando a la izquierda, volteamos
+        
+       
+        Girar();
+     
 
-        if (desplX > 0 && !mirandoDerecha)
+    }
+
+    private void FixedUpdate()
+    {
+        Andar();
+    }
+
+    void Girar()
+    {
+ //Si nos movemos a la derecha y estamos mirando a la izquierda, volteamos
+
+        if (desplH > 0 && !mirandoDerecha)
         {
             Flip();
         }
         // En caso contrario, si nos movemos a la izquierda y miramos a la derecha
-        else if (desplX < 0 && mirandoDerecha)
+        else if (desplH < 0 && mirandoDerecha)
         {
             // giramos
             Flip();
         }
-
-     
 
     }
    void Flip()
@@ -56,16 +67,7 @@ public class PlayerManager : MonoBehaviour
             theScale.x *= -1;
             transform.localScale = theScale;
         }
-        private void FixedUpdate()
-    {
-        desplH = Input.GetAxis("Horizontal");
-        // Aplicamos el movimiento
-        rb.velocity = new Vector2(desplH * maxSpeed, rb.velocity.y);
-        //Redondeamos la velocidad para pasarlo al parámetro del animator
-        speed = Mathf.Abs(rb.velocity.x);
-        ani.SetFloat("DesplH", speed);
-    }
-
+       
 
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -94,13 +96,7 @@ public class PlayerManager : MonoBehaviour
             rb.AddForce(Vector2.up * impulsoV, ForceMode2D.Impulse);
         }
 
-        void Saltar()
-        {
-            if (Input.GetKeyDown("Space"))
-            {
-
-            }
-        }
+       
     }
 
     void Crunch()
@@ -125,11 +121,12 @@ public class PlayerManager : MonoBehaviour
 
     void Andar()
     {
-        if (Input.GetKeyDown("Space"))
-        {
-
-        }
-
+        
+        // Aplicamos el movimiento
+        rb.velocity = new Vector2(desplH * maxSpeed, rb.velocity.y);
+        //Redondeamos la velocidad para pasarlo al parámetro del animator
+        speed = Mathf.Abs(rb.velocity.x);
+        ani.SetFloat("SpeedX", speed);
 
     }
 }
