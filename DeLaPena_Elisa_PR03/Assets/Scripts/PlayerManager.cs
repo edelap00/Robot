@@ -119,6 +119,12 @@ public class PlayerManager : MonoBehaviour
        
     }
 
+    void Morir()
+    {
+        ani.SetTrigger("Morir");
+
+    }
+
     void Andar()
     {
         
