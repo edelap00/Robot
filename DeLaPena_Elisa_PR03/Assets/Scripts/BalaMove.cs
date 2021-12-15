@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class BalaMove : MonoBehaviour
 {
+    Animator ani;
+   
+    [SerializeField] GameObject player;
+
     float speedBullet = 15f;
     // Start is called before the first frame update
     void Start()
     {
+        ani = GetComponent<Animator>();
         Invoke("Autodestruir", 20f);
         transform.parent = null;
     }
@@ -25,11 +30,15 @@ public class BalaMove : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Robot")
+
+        if (collision.gameObject.name == "robot")
         {
             PlayerManager playerManager = collision.gameObject.GetComponent<PlayerManager>();
            
             playerManager.SendMessage("Morir");
+
+            
+
         }
 
         Destroy(gameObject);

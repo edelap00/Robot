@@ -119,7 +119,7 @@ public class PlayerManager : MonoBehaviour
        
     }
 
-    void Morir()
+    public void Morir()
     {
         ani.SetTrigger("Morir");
 
