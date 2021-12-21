@@ -21,6 +21,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] AudioClip salto;
     [SerializeField] AudioClip golpe;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -97,6 +98,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !crouch)
         {
+            audioSource.PlayOneShot, 1f);
             ani.SetTrigger("Jump");
             rb.AddForce(Vector2.up * impulsoV, ForceMode2D.Impulse);
         }
@@ -117,7 +119,7 @@ public class PlayerManager : MonoBehaviour
            
         }
 
-       if (Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.LeftControl))
+      if (Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyUp(KeyCode.LeftControl))
         {
             print("Arriba");
             ani.SetBool("Crouch", false);
@@ -151,7 +153,7 @@ public class PlayerManager : MonoBehaviour
         
          if(alive){
     alive=false;
-      AudioSource.PlayOneShot(muerte, 1f);
+            audioSource.PlayOneShot(muerte, 1f);
     }
 
    Invoke("Reiniciar", 3f);
