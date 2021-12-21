@@ -32,7 +32,7 @@ public class PlayerManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    print(isGrounded);
+    
         desplH = Input.GetAxis("Horizontal");
 
         if (alive){
