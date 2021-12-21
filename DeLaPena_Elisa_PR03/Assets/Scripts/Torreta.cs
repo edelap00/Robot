@@ -10,11 +10,13 @@ public class Torreta : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] GameObject bala;
     [SerializeField] Transform cannon;
-
+    AudioSource audioSource;
+    Animator ani;
 
     void Start()
     {
-        
+        audioSource= GetComponent <AudioSource>();
+        ani= GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -26,11 +28,18 @@ public class Torreta : MonoBehaviour
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle - 90);
 
+        if(disparando){
+        ani.SetBool("disparando",true); 
+        } else {
+        ani.SetBool("disparando",false); 
+        }
+
     }
 
     void Disparar()
     {
         //evento desde animación de torreta.
         Instantiate(bala, cannon);
+        audioSource.Play();
     }
 }

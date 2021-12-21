@@ -11,6 +11,9 @@ public class CamFollow : MonoBehaviour
     [SerializeField] Transform playerPosition;
     //Variables mov de la cámara
      float distancia = -10f;
+     [SerializeField] float altura=2f;
+
+
     Vector3 cameraPosition;
 
     void Start()
@@ -22,7 +25,7 @@ public class CamFollow : MonoBehaviour
     void FixedUpdate()
     {
       //  transform.LookAt(playerPosition);
-        cameraPosition = new Vector3((playerPosition.position.x), (playerPosition.position.y), distancia);
+        cameraPosition = new Vector3((playerPosition.position.x), (playerPosition.position.y)+altura, distancia);
         transform.position = cameraPosition;
     }
 }
