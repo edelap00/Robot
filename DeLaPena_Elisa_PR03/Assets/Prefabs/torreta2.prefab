@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 1028311436288127365}
   m_Layer: 0
   m_Name: turret_02_mk2_10
-  m_TagString: Untagged
+  m_TagString: torreta1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,7 +160,7 @@ GameObject:
   - component: {fileID: 1028311437891395868}
   m_Layer: 0
   m_Name: torreta2
-  m_TagString: torreta
+  m_TagString: torreta1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -43,12 +43,7 @@ public class Torreta1 : MonoBehaviour
 
     public void ActivarTorreta()
     {
-       /* if( Mathf.Abs(transform.position.x - player.transform.position.x) < 5f)
-        {
-
-        }
-        ani.SetBool("dispara", true);
-    */
+      
 }
     public void DesactivarTorreta()
     {

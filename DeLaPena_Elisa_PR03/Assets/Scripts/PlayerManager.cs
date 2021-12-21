@@ -11,6 +11,7 @@ public class PlayerManager : MonoBehaviour
     //variables 
     bool alive;
     bool isGrounded;
+    bool crouch;
     int impulsoV = 8;
     float desplH;
     float maxSpeed = 4f;
@@ -38,6 +39,8 @@ public class PlayerManager : MonoBehaviour
         if (alive){
         Saltar();
         Girar();
+            Crunch();
+            Correr();
         }
        
      
@@ -92,7 +95,7 @@ public class PlayerManager : MonoBehaviour
 
     void Saltar()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded )
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !crouch)
         {
             ani.SetTrigger("Jump");
             rb.AddForce(Vector2.up * impulsoV, ForceMode2D.Impulse);
@@ -103,22 +106,43 @@ public class PlayerManager : MonoBehaviour
 
     void Crunch()
     {
-        if (Input.GetKeyDown("Space"))
+        if (Input.GetKeyDown(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.LeftControl))
         {
-
+            print("Abajo");
+            
+                ani.SetBool("Crouch", true);
+            crouch = true;
+                maxSpeed = 2f;
+            
+           
         }
 
-       
+       if (Input.GetKeyUp(KeyCode.DownArrow) || Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            print("Arriba");
+            ani.SetBool("Crouch", false);
+            maxSpeed = 4f;
+            crouch = false;
+        }
+
+
     }
 
     void Correr()
     {
-        if (Input.GetKeyDown("Space"))
+         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-
+            //Cambio la velocidad
+            maxSpeed = 7f;
+            ani.SetBool("Running", true);
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            ani.SetBool("Running", false);
+            maxSpeed = 4f;
         }
 
-       
+
     }
 
     public void Morir()
@@ -127,7 +151,7 @@ public class PlayerManager : MonoBehaviour
         
          if(alive){
     alive=false;
-  //  AudioSource.PlayOneShot(muerte, 1f);
+      AudioSource.PlayOneShot(muerte, 1f);
     }
 
    Invoke("Reiniciar", 3f);

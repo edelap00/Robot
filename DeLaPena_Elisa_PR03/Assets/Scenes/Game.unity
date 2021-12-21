@@ -329,12 +329,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147868027}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e56c1d31be6a8e43a2511991ba2bd15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   torretas: []
+  tagTotal: torreta1
 --- !u!1 &166821532
 GameObject:
   m_ObjectHideFlags: 0
@@ -2135,20 +2136,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1028311436288127363, guid: 9d9db55f6d51afc43bd569fd1c9fcd30, type: 3}
-      propertyPath: m_TagString
-      value: torreta1
-      objectReference: {fileID: 0}
     - target: {fileID: 1028311436288127365, guid: 9d9db55f6d51afc43bd569fd1c9fcd30, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 496045889}
-    - target: {fileID: 1028311437891395867, guid: 9d9db55f6d51afc43bd569fd1c9fcd30, type: 3}
-      propertyPath: m_Name
-      value: torreta2
+    - target: {fileID: 1028311436288127365, guid: 9d9db55f6d51afc43bd569fd1c9fcd30, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1028311437891395867, guid: 9d9db55f6d51afc43bd569fd1c9fcd30, type: 3}
-      propertyPath: m_TagString
+      propertyPath: m_Name
       value: torreta1
       objectReference: {fileID: 0}
     - target: {fileID: 1028311437891395868, guid: 9d9db55f6d51afc43bd569fd1c9fcd30, type: 3}

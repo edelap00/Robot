@@ -6,11 +6,13 @@ public class Trampas : MonoBehaviour
 {
 
    [SerializeField] GameObject[] torretas;
+    [SerializeField] string tagTotal;
 
     // Start is called before the first frame update
     void Start()
     {
-        torretas = GameObject.FindGameObjectsWithTag("torreta");
+        Torreta1 torreta1 = GetComponent<Torreta1>();
+        torretas = GameObject.FindGameObjectsWithTag(tagTotal);
     }
 
     // Update is called once per frame
@@ -35,9 +37,19 @@ public class Trampas : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+
+
         if (collision.gameObject.name == "robot")
-        {
+        { 
             print("Fuera");
+            foreach (GameObject torreta in torretas)
+            {
+                Torreta1 torreta1 = torreta.GetComponent<Torreta1>();
+               
+                  torreta1.SendMessage("DesactivarTorreta");
+
+            }
+            
         }
     }
 }

@@ -12,10 +12,12 @@ public class Torreta : MonoBehaviour
     AudioSource audioSource;
     bool disparando;
     Animator ani;
+    [SerializeField] float distancia;
 
     void Start()
     {
-        Animator ani = GetComponent<Animator>();
+        distancia = 6f;
+        
         audioSource = GetComponent <AudioSource>();
         ani= GetComponent<Animator>();
     }
@@ -33,12 +35,13 @@ public class Torreta : MonoBehaviour
 
            float distanciaJugador = Vector3.Distance(player.transform.position, transform.position);
 
-            if(distanciaJugador<20f && !disparando){
+            if(distanciaJugador< distancia && !disparando){
                 ActivarTorreta();
                 disparando = true;
-            } else if(distanciaJugador> 20f && disparando)
+            } else if(distanciaJugador> distancia && disparando)
             {
                 DesactivarTorreta();
+                disparando = false;
                 
             }
         }
@@ -47,13 +50,6 @@ public class Torreta : MonoBehaviour
 
     void Disparar()
     {
-
-        /* if( Mathf.Abs(transform.position.x - player.transform.position.x) < 5f)
-       {
-
-       }
-       ani.SetBool("dispara", true);
-   */
 
         //evento desde animación de torreta.
         Instantiate(bala, cannon);
