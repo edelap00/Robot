@@ -6,6 +6,7 @@ TagManager:
   tags:
   - torreta
   - torreta1
+  - tapa
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - Plat_movil
   - coliCaida
   - libertad
-  - 
-  - 
+  - engrana
+  - torreta1
   - 
   - 
   - 

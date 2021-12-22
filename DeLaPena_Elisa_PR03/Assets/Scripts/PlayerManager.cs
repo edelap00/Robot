@@ -24,11 +24,18 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] AudioClip salto;
     [SerializeField] AudioClip golpe;
     [SerializeField] AudioClip hero;
-
+    [SerializeField] AudioClip timbre;
+    Renderer rend;
+    [SerializeField] GameObject engranaje;
+     [SerializeField] GameObject tapa;
+     [SerializeField] GameObject membrana;
+     Vector3 membranaPos= new Vector3 (23.7f, 10.2f, 0f);
 
     // Start is called before the first frame update
     void Start()
     {
+        rend = GetComponent<Renderer>();
+        rend.enabled = true;
         libre = false;
        alive= true;
        rb = GetComponent<Rigidbody2D>();
@@ -206,6 +213,12 @@ public class PlayerManager : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
+    if (collision.gameObject.layer == 10)
+        {audioSource.PlayOneShot(timbre, 1f);
+          Abrir();
+        }
+
         if (collision.gameObject.layer == 6)
         {
            isGrounded = true;
@@ -213,7 +226,10 @@ public class PlayerManager : MonoBehaviour
         }
 
          if (collision.gameObject.layer == 8)
-        {audioSource.PlayOneShot(muerte, 1f);
+        {
+        audioSource.PlayOneShot(muerte, 1f);
+        //Destroy(gameObject);
+       rend.enabled=false;
         
         Invoke("Reiniciar",2f);
          }
@@ -232,6 +248,7 @@ public class PlayerManager : MonoBehaviour
         if(!libre){
             audioSource.Stop();
             audioSource.PlayOneShot(hero, 1f);
+            Instantiate (membrana, membranaPos , Quaternion.identity);
         libre=true;
         ani.SetTrigger("Rodar");
         }
@@ -257,6 +274,11 @@ public class PlayerManager : MonoBehaviour
 
     }
 
+    void Abrir()
+    {
+        Destroy(tapa);
+        Destroy(engranaje);
+    }
 
    void Final(){
    SceneManager.LoadScene(3);

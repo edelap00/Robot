@@ -7,12 +7,13 @@ public class Trampas : MonoBehaviour
 
    [SerializeField] GameObject[] torretas;
     [SerializeField] string tagTotal;
-
+ 
     // Start is called before the first frame update
     void Start()
     {
-        Torreta1 torreta1 = GetComponent<Torreta1>();
-        torretas = GameObject.FindGameObjectsWithTag("torreta1");
+          torretas = GameObject.FindGameObjectsWithTag(tagTotal);
+        print(torretas.Length);
+      
     }
 
     // Update is called once per frame
@@ -25,12 +26,16 @@ public class Trampas : MonoBehaviour
     {
         if (collision.gameObject.name == "robot")
         {
-            print("DEntro");
+            print("Dentro");
             foreach(GameObject torreta in torretas)
             {
                 Torreta1 torreta1 = torreta.GetComponent<Torreta1>();
-                // Animator ani = torreta.GetComponent<Animator>();
-                torreta1.SendMessage("ActivarTorreta");
+                 // torreta1.SendMessage("ActivarTorreta"); no me está funcionando con Script
+
+                 Animator ani = torreta.GetComponent<Animator>();
+                 
+                    ani.SetBool("dispara", true);
+              
             }
         }
     }
@@ -45,8 +50,11 @@ public class Trampas : MonoBehaviour
             foreach (GameObject torreta in torretas)
             {
                 Torreta1 torreta1 = torreta.GetComponent<Torreta1>();
-               
-                  torreta1.SendMessage("DesactivarTorreta");
+               //   torreta1.SendMessage("DesactivarTorreta");
+
+               Animator ani = torreta.GetComponent<Animator>();
+                
+                    ani.SetBool("dispara", false);
 
             }
             

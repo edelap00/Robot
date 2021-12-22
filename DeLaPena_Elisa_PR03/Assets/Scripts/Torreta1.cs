@@ -35,7 +35,7 @@ public class Torreta1 : MonoBehaviour
 
     void Disparar()
     {
-        disparando = true;
+        
         //evento desde animación de torreta.
         Instantiate(bala, cannon);
         audioSource.Play();
@@ -43,11 +43,13 @@ public class Torreta1 : MonoBehaviour
 
     public void ActivarTorreta()
     {
+    disparando=true;
     ani.SetBool("dispara", true);
       
 }
     public void DesactivarTorreta()
     {
+    disparando=false;
         ani.SetBool("dispara", false);
     }
 }

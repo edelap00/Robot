@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7711049745523558556}
   - component: {fileID: 3933291000213830512}
-  - component: {fileID: 1089591776468795411}
+  - component: {fileID: 997060963761960567}
   m_Layer: 0
   m_Name: proyectil
   m_TagString: Untagged
@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
---- !u!58 &1089591776468795411
-CircleCollider2D:
+--- !u!70 &997060963761960567
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -59,9 +59,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00062786415, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.038760412
+  m_Offset: {x: -0.000000007450581, y: -0.008301616}
+  m_Size: {x: 0.090454236, y: 0.31373417}
+  m_Direction: 0
 --- !u!1 &5957245292241003622
 GameObject:
   m_ObjectHideFlags: 0
