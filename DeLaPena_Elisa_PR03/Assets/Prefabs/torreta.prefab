@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 804128563964671659}
   m_Layer: 0
   m_Name: torreta
-  m_TagString: Untagged
+  m_TagString: torreta
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,6 +120,7 @@ MonoBehaviour:
   player: {fileID: 0}
   bala: {fileID: 1524727523103908997, guid: 0be4d2010660af343b50a8eba10501b1, type: 3}
   cannon: {fileID: 804128564953611902}
+  distancia: 0
 --- !u!82 &804128563964671659
 AudioSource:
   m_ObjectHideFlags: 0

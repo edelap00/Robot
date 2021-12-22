@@ -15,8 +15,8 @@ TagManager:
   - UI
   - Suelo
   - Plat_movil
-  - 
-  - 
+  - coliCaida
+  - libertad
   - 
   - 
   - 
@@ -42,4 +42,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: fondo
+    uniqueID: 3640054369
+    locked: 0
+  - name: f
+    uniqueID: 1594224457
+    locked: 0
+  - name: front
+    uniqueID: 2051503503
+    locked: 0
+  - name: but
+    uniqueID: 583043065
     locked: 0

@@ -12,7 +12,7 @@ public class Trampas : MonoBehaviour
     void Start()
     {
         Torreta1 torreta1 = GetComponent<Torreta1>();
-        torretas = GameObject.FindGameObjectsWithTag(tagTotal);
+        torretas = GameObject.FindGameObjectsWithTag("torreta1");
     }
 
     // Update is called once per frame

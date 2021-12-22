@@ -16,7 +16,7 @@ public class Torreta : MonoBehaviour
 
     void Start()
     {
-        distancia = 6f;
+        distancia = 5f;
         
         audioSource = GetComponent <AudioSource>();
         ani= GetComponent<Animator>();

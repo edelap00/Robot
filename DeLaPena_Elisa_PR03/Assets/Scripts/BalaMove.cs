@@ -8,7 +8,7 @@ public class BalaMove : MonoBehaviour
    
     [SerializeField] GameObject player;
 
-    float speedBullet = 15f;
+    float speedBullet = 7f;
     // Start is called before the first frame update
     void Start()
     {

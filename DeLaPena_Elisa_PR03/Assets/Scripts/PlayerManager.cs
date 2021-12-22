@@ -12,6 +12,7 @@ public class PlayerManager : MonoBehaviour
 
     //variables 
     bool alive;
+    bool libre;
     bool isGrounded;
     bool crouch;
     int impulsoV = 8;
@@ -22,11 +23,13 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] AudioClip muerte;
     [SerializeField] AudioClip salto;
     [SerializeField] AudioClip golpe;
+    [SerializeField] AudioClip hero;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        libre = false;
        alive= true;
        rb = GetComponent<Rigidbody2D>();
        ani = GetComponent<Animator>();
@@ -171,7 +174,7 @@ public class PlayerManager : MonoBehaviour
 
        void Reiniciar()
     {
-       // SceneManager.LoadScene(1);
+       SceneManager.LoadScene(2);
     }
 
     void UpdateCollider(){
@@ -209,6 +212,12 @@ public class PlayerManager : MonoBehaviour
             ani.SetBool("isGrounded",true);
         }
 
+         if (collision.gameObject.layer == 8)
+        {audioSource.PlayOneShot(muerte, 1f);
+        
+        Invoke("Reiniciar",2f);
+         }
+
          if (collision.gameObject.layer == 7)
         {
             //emparentar
@@ -217,6 +226,17 @@ public class PlayerManager : MonoBehaviour
             isGrounded = true;
             ani.SetBool("isGrounded",true);
         }
+        if (collision.gameObject.layer == 9)
+        {
+
+        if(!libre){
+            audioSource.Stop();
+            audioSource.PlayOneShot(hero, 1f);
+        libre=true;
+        ani.SetTrigger("Rodar");
+        }
+            Invoke("Final",12f);
+         }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
@@ -233,6 +253,13 @@ public class PlayerManager : MonoBehaviour
             ani.SetBool("isGrounded",false); 
          }
 
+          
+
+    }
+
+
+   void Final(){
+   SceneManager.LoadScene(3);
     }
   }
 

@@ -24,13 +24,13 @@ public class Torreta1 : MonoBehaviour
     void Update()
     {
        
-
+    /*
         if(disparando){
         ani.SetBool("dispara",true); 
         } else {
         ani.SetBool("dispara",false); 
         }
-
+        */
     }
 
     void Disparar()
@@ -43,6 +43,7 @@ public class Torreta1 : MonoBehaviour
 
     public void ActivarTorreta()
     {
+    ani.SetBool("dispara", true);
       
 }
     public void DesactivarTorreta()
