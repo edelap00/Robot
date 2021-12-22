@@ -8,6 +8,8 @@ public class PlayerManager : MonoBehaviour
         Rigidbody2D rb;
         Animator ani;
        AudioSource audioSource;
+       BoxCollider2D collider;
+
     //variables 
     bool alive;
     bool isGrounded;
@@ -29,6 +31,11 @@ public class PlayerManager : MonoBehaviour
        rb = GetComponent<Rigidbody2D>();
        ani = GetComponent<Animator>();
        audioSource = GetComponent<AudioSource>();
+
+       //collider
+       collider = GetComponent<BoxCollider2D>();
+        collider.offset = new Vector2(0.04f, 1.24f);
+        collider.size = new Vector2(1.2f, 2.23f);
     }
 
     // Update is called once per frame
@@ -36,12 +43,13 @@ public class PlayerManager : MonoBehaviour
     {
     
         desplH = Input.GetAxis("Horizontal");
-
+        
         if (alive){
         Saltar();
         Girar();
-            Crunch();
-            Correr();
+        Crunch();
+        Correr();
+        UpdateCollider();
         }
        
      
@@ -98,7 +106,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !crouch)
         {
-            audioSource.PlayOneShot, 1f);
+            audioSource.PlayOneShot(salto, 1f);
             ani.SetTrigger("Jump");
             rb.AddForce(Vector2.up * impulsoV, ForceMode2D.Impulse);
         }
@@ -150,11 +158,12 @@ public class PlayerManager : MonoBehaviour
     public void Morir()
     {
         ani.SetTrigger("Morir");
-        
+         audioSource.PlayOneShot(muerte, 1f);
          if(alive){
-    alive=false;
-            audioSource.PlayOneShot(muerte, 1f);
-    }
+        alive=false;
+        collider.offset = new Vector2(-0.05f, 0.64f);
+        collider.size = new Vector2(2.41f, 1.03f);
+           }
 
    Invoke("Reiniciar", 3f);
 
@@ -164,6 +173,33 @@ public class PlayerManager : MonoBehaviour
     {
        // SceneManager.LoadScene(1);
     }
+
+    void UpdateCollider(){
+   /* 
+   Aquí quería intentar modificar el collider con un switch, pero ya que desde casa no veo ni la consola, me está costando
+   Recurro a usar este método para el crouch y en muerte otra actualización
+   
+   switch(ani.GetCurrentAnimatorStateInfo(0).IsName{
+    case "crouch":
+     collider.offset = new Vector2(0.41f, 0.9f);
+            collider.size = new Vector2(1.46f, 1.54f);
+    break;
+    */
+    
+
+     if (ani.GetCurrentAnimatorStateInfo(0).IsName("r_crouch") || ani.GetCurrentAnimatorStateInfo(0).IsName("r_crouch_stop"))
+        {
+            collider.offset = new Vector2(0.41f, 0.9f);
+            collider.size = new Vector2(1.46f, 1.54f);
+        }
+        else
+        {
+            collider.offset = new Vector2(0.04f, 1.24f);
+            collider.size = new Vector2(1.2f, 2.23f);
+        }
+    }
+
+    
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -195,6 +231,8 @@ public class PlayerManager : MonoBehaviour
             transform.parent = null;
              isGrounded = false;
             ani.SetBool("isGrounded",false); 
-        }
+         }
+
     }
-}
+  }
+
