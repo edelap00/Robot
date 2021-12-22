@@ -9,6 +9,7 @@ public class PlayerManager : MonoBehaviour
         Animator ani;
        AudioSource audioSource;
        BoxCollider2D collider;
+       CamFollow camFollow;
 
     //variables 
     bool alive;
@@ -30,10 +31,12 @@ public class PlayerManager : MonoBehaviour
      [SerializeField] GameObject tapa;
      [SerializeField] GameObject membrana;
      Vector3 membranaPos= new Vector3 (23.7f, 10.2f, 0f);
+     [SerializeField]GameObject cam;
 
     // Start is called before the first frame update
     void Start()
     {
+       camFollow = cam.GetComponent<CamFollow>();
         rend = GetComponent<Renderer>();
         rend.enabled = true;
         libre = false;
@@ -251,6 +254,7 @@ public class PlayerManager : MonoBehaviour
             Instantiate (membrana, membranaPos , Quaternion.identity);
         libre=true;
         ani.SetTrigger("Rodar");
+        //StartCoroutine("Alejar", camFollow.distancia);
         }
             Invoke("Final",12f);
          }
@@ -280,8 +284,19 @@ public class PlayerManager : MonoBehaviour
         Destroy(engranaje);
     }
 
+     IEnumerator Alejar(int distancia)
+    {
+       
+
+        for (int n=0; ;distancia--)
+        {
+            
+        }
+    }
+
    void Final(){
    SceneManager.LoadScene(3);
+  // StopCoroutine("Alejar");
     }
   }
 

@@ -10,7 +10,7 @@ public class CamFollow : MonoBehaviour
     //Variable de tipo transform que está vinculada al robot
     [SerializeField] Transform playerPosition;
     //Variables mov de la cámara
-     float distancia = -10f;
+     public float distancia = -10f;
      [SerializeField] float altura=2f;
 
 
